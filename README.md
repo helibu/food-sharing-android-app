@@ -53,7 +53,42 @@ Model–view–presenter (MVP) is a derivation of the model–view–controller 
 In MVP, the presenter assumes the functionality of the "middle-man". In MVP, all presentation logic is pushed to the presenter.
 
 ### Basic Structure
-Three fragments: Food posts/requests, Food location via Google Map and login interface.
+Three fragments: Food list, Food location via Google Map and login.
+One Main activity with Viewpager, binding with 3 alive container fragments. 
+<br>3 pages corresponding to 3 container fragments.
+<br>Food list fragment
+<br>Map fragment
+<br>Setting fragment
+
+<div align=center><img src="https://github.com/ec500-software-engineering/project-22-food-sharing-app/blob/master/pics/overall.gif"></div>
+
+#### Login Fragment
+For login, we support register/login with Parse or Google sign in api. And it will display google account info when sign in with Google.
+<div align=center><img src="https://github.com/ec500-software-engineering/project-22-food-sharing-app/blob/master/pics/signin.gif"></div>
+
+
+#### Food List Fragment
+This part will fetch data from Parse Database, use RecyclerView to display, and MVP structure to separate model and view logic. 
+<br> When click on the listitem, will get into the detail information of the item.
+##### Display list
+<div align=center><img src="https://github.com/ec500-software-engineering/project-22-food-sharing-app/blob/master/pics/ItemList.gif"></div>
+
+##### Post Fragment:
+Post Fragment to post/request food. Allow user to have access to local photo gallery on their phone.
+And posts directly to Parse database. Also, you have to login if you want to post something
+
+<div align=center><img src="https://github.com/ec500-software-engineering/project-22-food-sharing-app/blob/master/pics/post.gif"></div>
+
+##### Refresh data
+Refresh Data with refresh button. Will refresh list and markers on map at the same time.
+<div align=center><img src="https://github.com/ec500-software-engineering/project-22-food-sharing-app/blob/master/pics/refresh.gif"></div>
+
+#### Map Fragment
+Google Map API is used here. Will get your current location with GPS and Network. Display the post/request data with markers and info windows. Will refresh the markers when click refresh on the first Page
+
+<div align=center><img src="https://github.com/ec500-software-engineering/project-22-food-sharing-app/blob/master/pics/map.gif"></div>
+
+
 
 ## Backend deployment
 ### AWS EC2
