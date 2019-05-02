@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="@color/light_gray"
+    >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/post_relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/post_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+
+    <ImageView
+        android:id="@+id/uploaded_image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="17dp"
+        android:background="@color/white" />
+    <ImageView
+        android:id="@+id/upload_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/ic_photo_camera_black_24dp"
+        />
+
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/post_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/post_image"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        >
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/word_post1"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Owner/Requester:"
+
+        android:textSize="15dp"
+        />
+
+
+    <EditText
+        android:id="@+id/owner_info"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/word_post1"
+        android:background="@drawable/border"
+
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:imeOptions="actionSend"
+        android:padding="0dp"
+        android:paddingLeft="5dp"
+        android:textSize="15dp"
+        />
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/word_post4"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/word_post1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Capacity:"
+
+        android:textSize="15dp"
+        />
+    <EditText
+        android:id="@+id/capacity_info"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/word_post1"
+        android:layout_toRightOf="@id/owner_info"
+        android:background="@drawable/border"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:imeOptions="actionSend"
+        android:padding="0dp"
+        android:paddingStart="5dp"
+        android:textSize="15dp"
+        />
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/word_post6"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:text="Category:"
+
+        android:layout_toRightOf="@id/capacity_info"
+        android:textSize="15dp"
+        />
+    <EditText
+        android:id="@+id/category_info"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/word_post1"
+        android:layout_toRightOf="@id/capacity_info"
+        android:background="@drawable/border"
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:imeOptions="actionSend"
+        android:padding="0dp"
+        android:paddingLeft="5dp"
+        android:textSize="15dp"
+        />
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/word_post2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Input food Description:"
+        android:layout_below="@id/owner_info"
+        android:textSize="15dp"
+        />
+
+    <EditText
+        android:id="@+id/food_info"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/word_post2"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/border"
+
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:imeOptions="actionSend"
+        android:textSize="15dp"
+        android:padding="0dp" />
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/word_post3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone Number:"
+        android:layout_below="@id/food_info"
+        android:textSize="15dp"
+        />
+
+    <EditText
+        android:id="@+id/phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/word_post3"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/border"
+
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:imeOptions="actionSend"
+        android:padding="0dp"
+        android:textSize="15dp"
+        android:paddingLeft="5dp"/>
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/word_post5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address:"
+        android:layout_below="@id/phone_number"
+        android:textSize="15dp"
+        />
+
+    <EditText
+        android:id="@+id/address_info"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/word_post5"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/border"
+
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:imeOptions="actionSend"
+        android:padding="0dp"
+        android:textSize="15dp"
+        android:paddingLeft="5dp"/>
+    <View
+        android:id="@+id/div_center_vertical"
+
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/address_info"
+        />
+    <Button
+        android:id="@+id/request_button"
+        android:layout_width="100dp"
+        android:textStyle="bold"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/address_info"
+        android:layout_alignRight="@+id/div_center_vertical"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:text="Request"
+        />
+    <Button
+        android:textStyle="bold"
+        android:id="@+id/post_button"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/address_info"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignLeft="@+id/div_center_vertical"
+        android:layout_centerHorizontal="true"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:text="Post"
+        />
+
+    </RelativeLayout>
+</RelativeLayout>
+</ScrollView>

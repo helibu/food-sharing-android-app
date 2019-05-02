@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="250dp"
+    android:layout_height="305dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/blue"
+    android:orientation="vertical">
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:id="@+id/info_title"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:background="@color/blue"
+            android:singleLine="true"
+            android:text="Food From Henry"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/white"
+            />
+
+        <ImageView
+            android:id="@+id/info_image"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:background="@color/white"
+            android:layout_below="@id/info_title"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/info_capacity"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/info_image"
+            android:lines="1"
+            android:padding="10dp"
+            android:text="Capacity:"
+            android:layout_marginTop="5dp"
+
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:textSize="15dp" />
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:id="@+id/info_PhoneNumber"
+            android:padding="10dp"
+            android:textSize="15dp"
+            android:layout_below="@id/info_capacity"
+            android:singleLine="true"
+            android:text="Phone:"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white"
+            android:textColor="@color/black"
+
+            />
+
+</RelativeLayout>
